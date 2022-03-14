@@ -1,0 +1,126 @@
+@import "~@dian/global-style/index.less";
+.dm-cache-org-dialog {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+}
+.dm-filter-org-dialog {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+.dm-org-history {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 45px;
+  padding: 8px;
+  background-color: #f2f2f2;
+  .history-label {
+    margin: 4px;
+  }
+}
+
+.dm-filter-org-role {
+  * {
+    box-sizing: border-box;
+  }
+  .header {
+    line-height: 40px;
+    text-align: left;
+    background-color: #f2f2f2;
+    padding: 0 10px;
+  }
+  .body {
+    height: 110px;
+    overflow: auto;
+  }
+
+  .role-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 70px;
+    overflow: auto;
+  }
+
+  .role-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .role-item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    text-align: left;
+    word-break: break-all;
+    border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0 8px;
+
+    .label {
+      flex-grow: 1;
+    }
+  }
+}
+
+.dm-org-dept {
+  overflow: auto;
+  .dept-item {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    place-items: center start;
+    padding: 16px 8px;
+    .dept-item-label {
+      width: 100%;
+      text-align: left;
+    }
+    .dept-item-icon {
+      display: grid;
+      place-items: center end;
+      width: 100%;
+    }
+  }
+}
+
+.dm-filter-children {
+  width: 130px;
+  line-height: 18px;
+  font-size: 12px;
+  * {
+    box-sizing: border-box;
+  }
+  .choose-dept-name {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .icon-svg {
+    color: @primary-color;
+  }
+}
+
+.dm-filter-children-green {
+  font-size: 14px;
+  background: #e6feed;
+  color: @primary-color;
+  padding: 8px;
+}
+
+.dm-org-path {
+  font-size: 16px;
+  color: @primary-color;
+}
+
+.dm-org-radio {
+  width: 16px;
+  height: 16px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+}
+
+.dm-org-radio-active {
+  font-size: 16px;
+  color: @primary-color;
+}
